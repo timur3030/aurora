@@ -1,11 +1,11 @@
 .header {
-  height: 90px;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 5;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent 95%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent 95%);
   padding-top: 20px;
+  padding-bottom: 30px;
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, auto);
