@@ -1,0 +1,57 @@
+.header {
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent 95%);
+  padding-top: 20px;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+  }
+  &__logo {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 18px;
+
+    a {
+      display: grid;
+      grid-template-columns: 1fr;
+      color: #fff;
+      text-decoration: none;
+      width: 100px;
+    }
+    span {
+      &:first-child {
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 28px;
+      }
+    }
+  }
+  &__list {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  &__phone {
+    text-align: right;
+    a {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 20px;
+      text-decoration: none;
+    }
+  }
+}

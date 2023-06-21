@@ -1,0 +1,50 @@
+.promo {
+  &__img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  &__img img {
+    width: 100%;
+  }
+  &__img .photo-0 {
+    position: relative;
+    z-index: -2;
+  }
+  &__img .photo-1 {
+    position: absolute;
+    top: -100%;
+    animation: fromtop 6s linear 3s infinite;
+  }
+  &__img .photo-2 {
+    position: absolute;
+    top: -100%;
+    animation: fromtop 6s linear infinite;
+  }
+  @keyframes fromtop {
+    0% {
+      top: -100%;
+    }
+    0.1% {
+      top: 0;
+    }
+    100% {
+      top: 0;
+      z-index: -1;
+    }
+  }
+  &__descr {
+    padding: 40px 0;
+    p {
+      margin-top: 24px;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 31px;
+    }
+  }
+  &__title {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 56px;
+  }
+}
