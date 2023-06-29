@@ -6,17 +6,22 @@
   }
   &__img img {
     width: 100%;
+    height: calc(100vh - 150px);
+    object-fit: cover;
   }
   &__img .photo-0 {
+    width: 100%;
     position: relative;
     z-index: -2;
   }
   &__img .photo-1 {
+    width: 100%;
     position: absolute;
     top: -100%;
     animation: fromtop 6s linear 3s infinite;
   }
   &__img .photo-2 {
+    width: 100%;
     position: absolute;
     top: -100%;
     animation: fromtop 6s linear infinite;
@@ -34,17 +39,19 @@
     }
   }
   &__descr {
-    padding: 40px 0;
+    padding: 20px 0 60px 0;
     p {
       margin-top: 24px;
       font-size: 22px;
       font-weight: 400;
       line-height: 31px;
+      margin-bottom: 0;
     }
   }
   &__title {
     font-size: 56px;
     font-weight: 400;
     line-height: 56px;
+    margin-bottom: 0;
   }
 }

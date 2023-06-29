@@ -26,10 +26,47 @@
   .container {
     max-width: 540px;
   }
+  .promo {
+    &__img img {
+      height: calc(100vh - 100px);
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -1.28px;
+    }
+  }
+  .customers {
+    &__title {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+      h2 {
+        font-size: 28px;
+        line-height: 35px;
+      }
+    }
+    &__list {
+      grid-template-columns: 1fr;
+      row-gap: 24px;
+    }
+    &__item {
+      padding: 12px;
+      row-gap: 24px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
+    padding: 0 12px;
+  }
+  .customers {
+    &__title {
+      h2 {
+        font-size: 21px;
+        line-height: 26.25px;
+      }
+    }
   }
 }
