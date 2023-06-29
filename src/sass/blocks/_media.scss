@@ -20,15 +20,65 @@
   .container {
     max-width: 720px;
   }
+  .header {
+    &__wrapper {
+      justify-content: space-between;
+      .hamburger {
+        cursor: pointer;
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div {
+          width: 30px;
+          height: 3px;
+          background: #fff;
+        }
+      }
+    }
+    &__menu {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
   }
+  .header {
+    position: static;
+    background: #fff;
+    padding: 10px 0;
+    &__wrapper {
+      .hamburger {
+        div {
+          background: #000;
+        }
+      }
+    }
+    &__logo {
+      font-size: 18px;
+      line-height: 16px;
+      a {
+        color: #000;
+      }
+      span {
+        &:first-child {
+          font-size: 29px;
+          line-height: 26px;
+        }
+      }
+    }
+    &__phone {
+      a {
+        color: #000;
+      }
+    }
+  }
   .promo {
     &__img img {
-      height: calc(100vh - 100px);
+      height: calc(100vh - 162px);
     }
     &__title {
       font-size: 32px;
