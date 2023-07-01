@@ -4,10 +4,12 @@
     position: relative;
     overflow: hidden;
   }
-  &__img img {
-    width: 100%;
-    height: calc(100vh - 150px);
-    object-fit: cover;
+  &__img {
+    img {
+      width: 100%;
+      height: calc(100vh - 160px);
+      object-fit: cover;
+    }
   }
   &__img .photo-0 {
     width: 100%;

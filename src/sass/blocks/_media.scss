@@ -47,7 +47,6 @@
     max-width: 540px;
   }
   .header {
-    position: static;
     background: #fff;
     padding: 10px 0;
     &__wrapper {
@@ -77,9 +76,13 @@
     }
   }
   .promo {
-    &__img img {
-      height: calc(100vh - 162px);
+    margin-top: 62px;
+    &__img {
+      img {
+        height: calc(100vh - 240px);
+      }
     }
+
     &__title {
       font-size: 32px;
       line-height: 32px;
@@ -116,6 +119,16 @@
       h2 {
         font-size: 21px;
         line-height: 26.25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    &__phone {
+      a {
+        font-size: 16px;
       }
     }
   }
