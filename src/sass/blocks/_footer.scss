@@ -27,8 +27,8 @@
     }
     &-social {
         display: grid;
-        grid-template-columns: repeat(2, 16px);
-        column-gap: 24px;
+        grid-template-columns: repeat(2, 32px);
+        column-gap: 32px;
     }
   }
 }
