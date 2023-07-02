@@ -43,6 +43,22 @@
   }
   &__descr {
     padding: 20px 0 60px 0;
+    &-block {
+      display: grid;
+      grid-template-columns: auto 360px;
+      grid-template-rows: repeat(3, auto);
+      grid-auto-rows: auto;
+      grid-auto-flow: column;
+      column-gap: 50px;
+      align-items: center;
+      div {
+        grid-column: 2/3;
+        grid-row: 1/4;
+        img {
+          width: 100%;
+        }
+      }
+    }
     p {
       margin-top: 24px;
       font-size: 22px;

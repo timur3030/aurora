@@ -8,11 +8,32 @@
   .container {
     max-width: 1140px;
   }
+  .promo {
+    &__descr {
+      &-block {
+        grid-template-columns: auto 315px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .promo {
+    &__descr {
+      &-block {
+        grid-template-columns: 1fr;
+        div {
+          margin-top: 24px;
+          grid-column: 1/2;
+          grid-row: 4/5;
+          width: 296px;
+          justify-self: center;
+        }
+      }
+    }
   }
   .footer {
     &__wrapper {
