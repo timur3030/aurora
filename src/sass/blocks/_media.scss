@@ -14,6 +14,12 @@
   .container {
     max-width: 960px;
   }
+  .footer {
+    &__wrapper {
+      grid-template-columns: repeat(2, 330px);
+      row-gap: 35px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -52,6 +58,11 @@
     }
     &__row {
       flex-direction: column;
+      &_btn {
+        button {
+          grid-column: 1/2;
+        }
+      }
     }
     label {
       margin-bottom: 12px;
@@ -127,6 +138,12 @@
       row-gap: 24px;
     }
   }
+  .footer {
+    &__wrapper {
+      grid-template-columns: 330px;
+      row-gap: 40px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -157,6 +174,11 @@
       a {
         font-size: 16px;
       }
+    }
+  }
+  .footer {
+    &__wrapper {
+      grid-template-columns: auto;
     }
   }
 }
