@@ -52,6 +52,20 @@
       column-gap: 50px;
       align-items: center;
       div {
+        animation: logobeat 2s ease infinite;
+        @keyframes logobeat {
+          from {
+            transform: scale(1);
+          }
+
+          50% {
+            transform: scale(1.025);
+          }
+
+          to {
+            transform: scale(1);
+          }
+        }
         grid-column: 2/3;
         grid-row: 1/4;
         img {

@@ -35,6 +35,14 @@
       }
     }
   }
+  .products {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__img {
+      height: 260px;
+    }
+  }
   .footer {
     &__wrapper {
       grid-template-columns: repeat(2, 330px);
@@ -71,6 +79,15 @@
     &__title {
       font-size: 45px;
       line-height: 45px;
+    }
+  }
+  .customers {
+    &__title {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+    &__item {
+      row-gap: 25px;
     }
   }
   .form {
@@ -134,17 +151,20 @@
         height: calc(100vh - 240px);
       }
     }
-
     &__title {
       font-size: 32px;
       line-height: 32px;
       letter-spacing: -1.28px;
     }
+    &__descr {
+      p {
+        font-size: 20px;
+        line-height: 29px;
+      }
+    }
   }
   .customers {
     &__title {
-      grid-template-columns: 1fr;
-      row-gap: 20px;
       h2 {
         font-size: 28px;
         line-height: 35px;
@@ -155,8 +175,35 @@
       row-gap: 24px;
     }
     &__item {
+      grid-template-rows: minmax(auto, 40px) auto;
       padding: 12px;
       row-gap: 24px;
+    }
+  }
+  .products {
+    padding: 40px 0;
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+  .form {
+    &__title {
+      font-size: 28px;
+      line-height: 34px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 26.8px;
+    }
+    &__row {
+      margin-bottom: 15px;
+    }
+    label {
+      margin-bottom: 8px;
     }
   }
   .footer {
