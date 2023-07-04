@@ -1,0 +1,32 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 382px;
+  min-height: 143px;
+  background: #fff;
+  border: 5px solid #e4e7eb;
+  border-radius: 8px;
+  padding: 40px;
+  &__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #0d0d0d;
+  }
+  &__descr {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #0d0d0d;
+  }
+}
+
+.activate {
+  display: block;
+}

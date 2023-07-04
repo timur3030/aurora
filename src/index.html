@@ -356,11 +356,25 @@
           <form action="#" class="form__form">
             <div class="form__row">
               <label for="name">Ваше имя</label
-              ><input name="name" id="name" type="text" placeholder="Имя" />
+              ><input
+                required
+                name="name"
+                id="name"
+                type="text"
+                class="input"
+                placeholder="Имя"
+              />
             </div>
             <div class="form__row">
               <label for="tel">Ваш телефон или Whatsapp</label
-              ><input name="tel" id="tel" type="number" placeholder="Номер" />
+              ><input
+                required
+                name="tel"
+                id="tel"
+                type="number"
+                class="input"
+                placeholder="Номер"
+              />
             </div>
             <div class="form__row">
               <label for="text">Расскажите о деталях</label
@@ -413,6 +427,21 @@
         </div>
       </div>
     </section>
+
+    <div class="modal" id="thanks">
+      <!-- <div class="modal__close">&times;</div> -->
+      <div class="modal__subtitle">Сообщение отправлено!</div>
+      <div class="modal__descr">Мы свяжемся с вами в ближайшее время!</div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
 
     <script src="js/script.js"></script>
   </body>
