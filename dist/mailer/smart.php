@@ -19,7 +19,8 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('timurweb05@gmail.com', 'Заявка с Aurora05.ru');   // От кого письмо 
-$mail->addAddress('nurik-85@bk.ru');     // Add a recipient
+$mail->addAddress('timur87@mail.ru');     // Add a recipient
+// nurik-85@bk.ru
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -32,7 +33,7 @@ $mail->Subject = 'Данные';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
-	Телефон(-Whatsapp): ' . $tel . '<br>
+	Телефон(Whatsapp): ' . $tel . '<br>
 	Текст: ' . $text . '';
 
 if(!$mail->send()) {
