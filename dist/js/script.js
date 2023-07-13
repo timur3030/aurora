@@ -1,38 +1,35 @@
-// let vh = window.innerHeight * 0.01;
-// document.documentElement.style.setProperty("--vh", `${vh}px`);
+const modal = document.querySelector(".modal"),
+  formBtn = document.querySelector(".form__btn"),
+  userName = document.querySelector("#name"),
+  userTel = document.querySelector("#tel"),
+  hamburger = document.querySelector(".hamburger"),
+  menu = document.querySelector(".header__menu"),
+  menuList = document.querySelectorAll(".header__menu-link"),
+  promoImg = document.querySelector(".promo__img"),
+  header = document.querySelector(".header");
 
-// const hamburger = document.querySelector(".hamburger"),
-//   menu = document.querySelector(".menu"),
-//   closeElem = document.querySelector(".menu__close"),
-//   overlay = document.querySelector(".menu__overlay"),
-//   menuList = document.querySelectorAll(".menu__link"),
-//   contactBtn = document.querySelector(".contacts__btn"),
-//   modal = document.querySelector(".modal"),
-//   checkbox = document.querySelector(".checkbox"),
-//   inputs = document.querySelectorAll(".input");
+window.addEventListener("scroll", function () {
+  if (
+    document.documentElement.scrollTop + 96 >
+    window.getComputedStyle(promoImg).height.replace(/px/g, "")
+  ) {
+    header.classList.add("header_color");
+  } else {
+    header.classList.remove("header_color");
+  }
+});
 
-const modal = document.querySelector(".modal");
-const formBtn = document.querySelector(".form__btn");
-const userName = document.querySelector("#name");
-const userTel = document.querySelector("#tel");
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  hamburger.classList.toggle("hamburger_active");
+});
 
-// hamburger.addEventListener("click", () => {
-//   menu.classList.add("active");
-// });
-
-// closeElem.addEventListener("click", () => {
-//   menu.classList.remove("active");
-// });
-
-// overlay.addEventListener("click", () => {
-//   menu.classList.remove("active");
-// });
-
-// menuList.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     menu.classList.remove("active");
-//   });
-// });
+menuList.forEach((item) => {
+  item.addEventListener("click", () => {
+    menu.classList.remove("active");
+    hamburger.classList.remove("hamburger_active");
+  });
+});
 
 formBtn.addEventListener("click", () => {
   if (userName.value && userTel.value) {
@@ -52,8 +49,6 @@ $(document).ready(function () {
       data: $(this).serialize(),
     }).done(function () {
       $(this).find("input").val("");
-      // $("#consultation, #order").fadeOut();
-      // $(".overlay, #thanks").fadeIn("slow");
       $("form").trigger("reset");
     });
     return false;

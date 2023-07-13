@@ -7,7 +7,6 @@
   &__img {
     img {
       width: 100%;
-      // height: calc(100vh - 160px);
       height: calc(100vh - 90px);
       object-fit: cover;
     }
@@ -42,6 +41,7 @@
     }
   }
   &__descr {
+    scroll-margin-top: 92px;
     padding: 20px 0 60px 0;
     &-block {
       display: grid;
