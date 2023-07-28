@@ -55,4 +55,19 @@ document.addEventListener("DOMContentLoaded", () => {
       return false;
     });
   });
+
+  // Событие touch на каждом продукте во время касания
+
+  const productItems = document.querySelectorAll(".products__item");
+  const productImgs = document.querySelectorAll(".products__img");
+
+  productItems.forEach((item, i) => {
+    item.addEventListener("touchstart", () => {
+      productImgs[i].style.cssText =
+        "padding: 3px; border: 2px black solid;";
+    });
+    item.addEventListener("touchend", () => {
+      productImgs[i].style.cssText = "";
+    });
+  });
 });
